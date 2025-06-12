@@ -1,0 +1,67 @@
+body {
+    font-family: 'ITC Kabel Std', sans-serif;
+    background-color: #F7F7F7;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.nav-light {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+.hero {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3)), url('https://source.unsplash.com/random/1920x1080/?minimal');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.video-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.video-card:hover {
+    transform: scale(1.03);
+}
+.video-card video {
+    transition: opacity 0.3s ease;
+}
+.video-card:hover video {
+    opacity: 0.9;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'ITC Kabel Std', sans-serif;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+.contact-btn:hover {
+    background-color: #333333;
+}
+/* Убираем закругления */
+* {
+    border-radius: 0 !important;
+}

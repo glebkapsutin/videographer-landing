@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио видеографа</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/itc-kabel-std" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="nav-light p-6 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-[#000000]">Victoria Talantova</h1>
+            <ul class="flex space-x-8 text-sm font-medium text-[#000000]">
+                <li><a href="#home" class="hover:text-[#333333] transition-colors">Главная</a></li>
+                <li><a href="#portfolio" class="hover:text-[#333333] transition-colors">Портфолио</a></li>
+                <li><a href="#about" class="hover:text-[#333333] transition-colors">Обо мне</a></li>
+                <li><a href="#contact" class="hover:text-[#333333] transition-colors">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section id="home" class="hero">
+        <div class="fade-in">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4">Искусство в каждом кадре</h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-80">Ваши истории, запечатлённые с мастерством</p>
+            <a href="#portfolio" class="contact-btn">Смотреть работы</a>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="py-20 container mx-auto px-4 bg-[#E5E5E5]">
+        <h2 class="text-4xl font-semibold text-center mb-12 fade-in">Портфолио</h2>
+        <div class="video-grid">
+            <div class="video-card fade-in">
+                <video class="w-full h-72 object-cover" muted>
+                    <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <div class="video-card fade-in">
+                <video class="w-full h-72 object-cover" muted>
+                    <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+            <!-- Добавь свои видео сюда -->
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl font-semibold text-center mb-12 fade-in">Обо мне</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto opacity-80 fade-in">
+            Я [Имя], видеограф, создающий истории через объектив. Моя работа — это сочетание технического мастерства и художественного видения, чтобы каждый кадр говорил сам за себя.
+        </p>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-20 container mx-auto px-4 bg-[#E5E5E5]">
+        <h2 class="text-4xl font-semibold text-center mb-12 fade-in">Связаться со мной</h2>
+        <div class="flex justify-center space-x-6 fade-in">
+            <a href="https://t.me/your_telegram" target="_blank" class="contact-btn">Связаться в Telegram</a>
+            <a href="https://wa.me/your_whatsapp" target="_blank" class="contact-btn">Связаться в WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-[#000000] p-6 text-center">
+        <p class="text-[#FFFFFF] opacity-80">© 2025 Victoria. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
