@@ -49,18 +49,7 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-.contact-btn {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-family: 'ITC Kabel Std', sans-serif;
-    transition: background-color 0.3s ease;
-    border: none;
-}
-.contact-btn:hover {
-    background-color: #333333;
-}
+
 
 
 .social-icon {
@@ -88,4 +77,37 @@ body {
         width: 4.5rem;
         height: 4.5rem;
     }
+}
+.contact-section {
+    background: linear-gradient(to bottom, #E5E5E5, #F7F7F7);
+}
+.contact-btn {
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #000000;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: 'ITC Kabel Std', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+.divider {
+    width: 80px;
+    height: 2px;
+    background-color: #000000;
+    margin: 16px auto;
+}
+.fade-in-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.2s;
+}
+.fade-in-delay.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
